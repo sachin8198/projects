@@ -1,0 +1,71 @@
+<!-- BILL GENERATOR
+
+Design and implement a system to generate the bill at a restaurant
+
+    Should be able to add an entry of ordered items along with quantity. (Eg: Dosa - 40 * 2 = 80)
+    Should have the ability to configure the tax percentage and add tips (Eg: Tax - 5%)
+    Should have the facility to give discount to the customer (Eg: Friday Fun - Rs 500)
+    Should show the total bill amount after the tax, tips and discount -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BILL GENERATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2 id="heading">ABCD RESTAURANT</h2>
+    <div id="date"></div>
+    <form id="form">
+        <label for="items">
+            Ordered Item Name
+            <input type="text" name="item" id="item" placeholder="Enter item">
+        </label>
+        <br>
+        <label for="Price">
+            Price of item
+            <input type="text" name="price" id="price" placeholder="in rupees">
+        </label>
+        <br>
+        <label for="quantity">
+            Quantity
+            <input type="text" name="quantity" id="qty" placeholder="in number">
+        </label>
+        <br>
+        <label for="tax%">
+            Tax Percentage
+            <input type="text" name="tax" id="tax%" placeholder="in number">
+            <br>
+            Tax Amount
+            <input type="text" name="tax" id="taxAmount" placeholder="tax" disabled>
+        </label>
+        <br>
+        <label for="tips">
+            Tips
+            <input type="text" name="tip" id="tip" placeholder="tips">
+        </label>
+        <br>
+        <label for="discount">
+            Discount Percentage
+            <input type="text" name="discount" id="discount%" placeholder="in number">
+            <br>
+            Discount Amount
+            <input type="text" name="discount" id="discount" placeholder="discount" disabled>
+        </label>
+        <br>
+        <label for="total">
+            Total
+            <input type="text" name="total" id="total" placeholder="total" disabled>
+        </label>
+        <br>
+    </form>
+    <button onclick="totalAmount()">total</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
