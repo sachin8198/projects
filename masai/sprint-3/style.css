@@ -1,0 +1,92 @@
+body {
+    /* background-image: url("img1.jpg");   */
+    width: 100%;
+    background-size: cover;
+    background-color: indigo;
+    z-index: -1;
+}
+
+h1 {
+    color: brown;
+    margin-left: 30%;
+}
+
+#content {
+    margin-left: 30%;
+}
+
+table,
+tr,
+td {
+    width: 600px;
+    height: 100px;
+    border: 2px solid red;
+}
+
+button {
+    padding: 20px;
+    margin: 10px;
+    background-color: black;
+    color: blanchedalmond;
+}
+
+h2 {
+    color: deeppink;
+    font-style: oblique;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#para {
+    color: deepskyblue;
+}
+
+.nc {
+    color: red;
+}
+
+.tc {
+    color: salmon;
+}
+
+.nd {
+    color: brown;
+}
+
+.td {
+    color: deeppink;
+}
+
+.nr {
+    color: green;
+}
+
+.tr {
+    color: gray;
+}
+
+.c1 {
+    padding: 10px;
+    margin: 10px;
+
+    font-size: 25px;
+}
+
+.res,
+.ind {
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#img3 {
+
+    width: 30%;
+    height: 800px;
+    float: left;
+}
+
+#img1 {
+    float: right;
+    width: 22%;
+    height: 800px;
+}
