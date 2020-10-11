@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(228, 222, 222);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container{
+    display: flex;
+    box-shadow: -5px -4px 3px 0 rgb(237, 241, 237),
+    5px 4px 3px 0 rgb(95, 93, 93);
+    padding: 20px;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.btn{
+    background-color: rgb(115, 115, 184);
+    padding: 8px;
+    margin: 15px;
+    color: cornsilk;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+  li.minus{
+      border-right: 4px solid red;
+  }
+
+  li.plus{
+    border-right: 4px solid blue;
+}
+
+.money-plus{
+    color: blue;
+}
+
+.money-minus{
+    color: red;
+}
