@@ -1,0 +1,213 @@
+.body__drawer {
+  height: 200px !important;
+}
+
+.body__icons {
+  color: blueviolet;
+}
+.backlog__remover {
+  background-color: blueviolet !important;
+}
+
+.backlog__remover {
+  color: white !important;
+}
+
+.body__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  font-weight: 400;
+}
+
+.body__tool {
+  background-color: #e0e0e0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  margin: 10px;
+  border-radius: 2px;
+  color: #616161;
+}
+
+.body__tool > * {
+  margin: 10px 3px;
+}
+
+.toolbar {
+  height: 15%;
+}
+
+.body__syllabus {
+  margin-left: 15%;
+  display: flex;
+  margin-top: -150px;
+}
+
+.body__syllabus > h2 {
+  background-color: #eeeeee;
+  padding: 20px 80px;
+  border-radius: 10px;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.body__subject {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 8%;
+  margin-top: 30px;
+}
+
+.body__subject > h2 {
+  background-color: #eeeeee;
+  padding: 20px 150px;
+  border-radius: 10px;
+  color: gray;
+  font-weight: 500;
+}
+
+.header__chemistry {
+  background-color: #673ab7 !important;
+  color: white !important;
+}
+
+.body__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 60px;
+  margin-left: 9.5%;
+}
+
+.body__footer h5 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #424242;
+}
+
+.body__chapterName {
+  display: flex;
+  align-items: center;
+  background-color: #eeeeee;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+.body__chapterName > * {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #673ab7 !important;
+}
+
+.body__chapterNumber {
+  display: flex;
+  background-color: #eeeeee;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.body__chapterNumber > * {
+  padding: 5px;
+  margin: 10px;
+}
+
+.body__square1,
+.body__square2,
+.body__square3,
+.body__square6,
+.body__square9,
+.body__square10,
+.body__square13,
+.body__square15,
+.body__square18 {
+  width: 10px;
+  height: 10px;
+  background-color: indigo;
+  border-radius: 2px;
+  margin: 5px;
+}
+
+.body__square4,
+.body__square5,
+.body__square7,
+.body__square8,
+.body__square11,
+.body__square12,
+.body__square14,
+.body__square16,
+.body__square17 {
+  width: 10px;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 2px;
+  margin: 5px;
+}
+
+.body__chapterNumber h6 {
+  display: flex;
+  align-items: center;
+  color: #9e9e9e;
+  font-size: 15px;
+  height: 4vh;
+}
+
+.body__concepts,
+.body__subconcepts {
+  display: flex;
+  align-items: center;
+  background-color: #e0e0e0;
+  padding: 15px 100px;
+  border-radius: 5px;
+}
+
+.body__concepts > h6 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.body__subconcepts > h6 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer__right {
+  margin-top: -280px;
+}
+
+.body__dropdown {
+  font-size: 30px !important;
+  height: 40px !important;
+  margin-left: 100px;
+}
+
+.body__clear__done {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #eeeeee;
+  padding-bottom: 25px;
+  color: #673ab7;
+}
+
+.body__clear__done > * {
+  margin-right: 60px;
+}
+
+.body__clear {
+  display: flex;
+  align-items: center;
+}
+
+.body__clearIcon {
+  font-size: 15px !important;
+  color: black;
+}

@@ -1,0 +1,79 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.header__logo {
+  font-size: 30px;
+}
+
+.header__navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0.88;
+}
+
+.header__select {
+  display: flex;
+  align-items: center;
+  background-color: #eeeeee;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.header__select > h3 {
+  color: #6a1b9a;
+  font-weight: 420;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.header__dropDown {
+  color: #6a1b9a;
+}
+
+.header__searchBar {
+  background-color: #eeeeee;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.header__searchBar > input {
+  border: none;
+  padding: 5px;
+  background-color: #eeeeee;
+}
+::placeholder {
+  color: #6a1b9a;
+  font-size: 17px;
+  font-weight: 520;
+}
+.header__searchIcon {
+  color: #6a1b9a;
+}
+
+.header__navbar__right {
+  display: flex;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: #eeeeee;
+  color: #6a1b9a;
+  border-radius: 7px;
+  margin-top: 7px;
+  margin-right: 2%;
+}
+
+.header__notificationBar {
+  font-size: 30px !important;
+  margin-right: 15px;
+}
+
+.header__dropdown {
+  font-size: 30px !important;
+  height: 40px !important;
+}
