@@ -1,30 +1,42 @@
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
+/* .header {
+  margin-top: -50px;
+} */
 
 .header__logo {
-  font-size: 30px;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  color: #6a1b9a;
+}
+
+.header__menuIcon {
+  font-size: 40px !important;
 }
 
 .header__navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex: 0.88;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
 }
 
-.header__select {
+.header__left {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   background-color: #eeeeee;
-  padding: 20px;
+  width: 300px;
+  height: 60px;
   border-radius: 8px;
 }
 
-.header__select > h3 {
+.header__activity,
+.header__toolGuide {
+  display: flex;
+  align-items: center;
+}
+
+.header__left h3 {
   color: #6a1b9a;
   font-weight: 420;
   font-size: 16px;
@@ -64,8 +76,7 @@
   background-color: #eeeeee;
   color: #6a1b9a;
   border-radius: 7px;
-  margin-top: 7px;
-  margin-right: 2%;
+  margin-top: 4px;
 }
 
 .header__notificationBar {
@@ -73,7 +84,100 @@
   margin-right: 15px;
 }
 
-.header__dropdown {
-  font-size: 30px !important;
-  height: 40px !important;
+@media only screen and (max-width: 600px) {
+  .header__navbar {
+    margin-left: 40px;
+    margin-bottom: 40px;
+  }
+
+  .header__left {
+    width: 160px;
+    height: 40px;
+    margin-right: 5px;
+  }
+
+  .header__searchBar {
+    padding: 8px;
+    width: 80px;
+  }
+  .header__searchBar > input {
+    width: 20px;
+  }
+
+  .header__navbar__right {
+    padding: 1px 2px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .header__navbar {
+    margin-left: 40px;
+    margin-bottom: 40px;
+  }
+  .header__left {
+    margin: 4px;
+    padding: 0px;
+  }
+  .header__searchBar {
+    padding: 15px;
+    width: 200px;
+  }
+
+  .header__searchBar > input {
+    width: 100px;
+  }
+
+  .header__navbar__right {
+    padding: 6px 3px;
+    margin: 4px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .header {
+    margin-top: -50px;
+  }
+  .header__navbar {
+    margin-left: 250px;
+  }
+  .header__left {
+    padding: 1px;
+  }
+
+  .header__navbar__right {
+    padding: 5px;
+  }
+  .header__searchBar {
+    padding: 13px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .header__navbar {
+    margin-left: 250px;
+  }
+  .header__left {
+    padding: 10px;
+  }
+  .header__searchBar {
+    padding: 23px;
+    margin: 0px 3px;
+  }
+  .header__navbar__right {
+    padding: 15px 50px;
+    margin-top: 4px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .header__navbar {
+    margin-left: 2%;
+  }
+  .header__left {
+    padding: 10px;
+    margin-left: 5px;
+  }
 }

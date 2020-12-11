@@ -1,7 +1,3 @@
-.body__drawer {
-  height: 200px !important;
-}
-
 .body__icons {
   color: blueviolet;
 }
@@ -17,7 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 10%;
+  height: 150px;
   font-weight: 400;
 }
 
@@ -42,14 +38,19 @@
 }
 
 .body__syllabus {
-  margin-left: 15%;
   display: flex;
-  margin-top: -150px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: -200px;
 }
 
-.body__syllabus > h2 {
+.body__syllabus :first-child {
+  width: 200px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #eeeeee;
-  padding: 20px 80px;
   border-radius: 10px;
   font-weight: 500;
   opacity: 0.8;
@@ -59,16 +60,21 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-left: 8%;
-  margin-top: 30px;
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-bottom: 100px;
 }
 
 .body__subject > h2 {
   background-color: #eeeeee;
-  padding: 20px 150px;
   border-radius: 10px;
   color: gray;
   font-weight: 500;
+  width: 300px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header__chemistry {
@@ -80,8 +86,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 60px;
-  margin-left: 9.5%;
+  margin-left: 70px;
 }
 
 .body__footer h5 {
@@ -102,6 +107,7 @@
 .body__chapterName > * {
   margin: 5px;
   padding: 5px;
+
   border-radius: 5px;
   color: white;
   font-size: 14px;
@@ -112,13 +118,9 @@
 .body__chapterNumber {
   display: flex;
   background-color: #eeeeee;
-  padding: 10px;
   border-radius: 2px;
-}
-
-.body__chapterNumber > * {
-  padding: 5px;
-  margin: 10px;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .body__square1,
@@ -158,35 +160,39 @@
   align-items: center;
   color: #9e9e9e;
   font-size: 15px;
-  height: 4vh;
 }
 
 .body__concepts,
 .body__subconcepts {
-  display: flex;
-  align-items: center;
-  background-color: #e0e0e0;
-  padding: 15px 100px;
+  width: 300px;
+  height: 195px;
   border-radius: 5px;
 }
 
-.body__concepts > h6 {
-  font-size: 14px;
-  font-weight: 500;
-}
-.body__subconcepts > h6 {
-  font-size: 14px;
-  font-weight: 500;
+.body__concepts__elements,
+.body__subconcepts__elements {
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 10px;
 }
 
-.footer__right {
-  margin-top: -280px;
+.body__concepts__elements > h6 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px;
+}
+.body__subconcepts__elements > h6 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px;
 }
 
 .body__dropdown {
   font-size: 30px !important;
   height: 40px !important;
-  margin-left: 100px;
 }
 
 .body__clear__done {
@@ -194,12 +200,13 @@
   justify-content: flex-end;
   align-items: center;
   background-color: #eeeeee;
-  padding-bottom: 25px;
   color: #673ab7;
+  padding: 10px;
 }
 
 .body__clear__done > * {
   margin-right: 60px;
+  margin-top: 10px;
 }
 
 .body__clear {
@@ -210,4 +217,171 @@
 .body__clearIcon {
   font-size: 15px !important;
   color: black;
+}
+
+/*
+  Extra
+  small
+  devices
+  (phones, 600px and down)
+  */
+@media only screen and (max-width: 600px) {
+  .body__syllabus {
+    margin-left: 5px;
+  }
+  .body__subject {
+    flex-wrap: wrap;
+  }
+  .body__subject > * {
+    margin: 15px;
+  }
+  .body__footer {
+    flex-wrap: wrap;
+    margin-left: 20px;
+  }
+
+  .body__center {
+    margin-top: 20px;
+  }
+
+  .body__chapterName {
+    padding: 2px;
+  }
+
+  .body__chapterName > * {
+    margin: 1px;
+    padding: 2px;
+  }
+  .body__concepts,
+  .body__subconcepts {
+    margin-top: 20px;
+    height: 100px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .body__syllabus {
+    margin-left: -80px;
+  }
+  .body__subject {
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px;
+  }
+  .body__subject > * {
+    margin: 20px;
+  }
+  .body__footer {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 60px;
+  }
+
+  .body__footer > * {
+    margin: 40px;
+  }
+
+  .body__subject > h2 {
+    width: 600px;
+    height: 70px;
+  }
+  .body__chapterName {
+    padding: 10px;
+  }
+
+  .body__concepts,
+  .body__subconcepts {
+    margin-top: 20px;
+    height: 100px;
+    width: 200px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .body__syllabus {
+    margin-left: 160px;
+  }
+  .body__syllabus :first-child {
+    padding: 15px 20px;
+  }
+  .body__subject {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 250px;
+    margin-top: 30px;
+  }
+  .body__footer {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 180px;
+  }
+  .body__concepts,
+  .body__subconcepts {
+    margin-top: 20px;
+    height: 100px;
+    width: 350px;
+    margin-left: 20px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .body__syllabus {
+    margin-left: 130px;
+  }
+  .body__syllabus :first-child {
+    padding: 20px 80px;
+  }
+  .body__subject {
+    flex-wrap: nowrap;
+    margin-left: 320px;
+  }
+  .body__subject > h2 {
+    padding: 20px 80px;
+    margin: 5px;
+  }
+  .body__footer {
+    margin-left: 0px;
+    flex-wrap: wrap;
+  }
+  .body__chapterName {
+    padding: 18px;
+  }
+  .body__concepts,
+  .body__subconcepts {
+    margin-top: 20px;
+    height: 100px;
+    width: 400px;
+    margin-left: 20px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .body__syllabus {
+    margin-left: -110px;
+  }
+  .body__subject {
+    flex-wrap: nowrap;
+    margin-left: 285px;
+  }
+
+  .body__footer {
+    margin-left: 290px;
+    flex-wrap: nowrap;
+    width: 1200px;
+  }
+  .body__concepts,
+  .body__subconcepts {
+    margin-top: 20px;
+    height: 100px;
+    width: 280px;
+  }
+  .body__center,
+  .body__right {
+    margin-top: -100px;
+  }
 }
