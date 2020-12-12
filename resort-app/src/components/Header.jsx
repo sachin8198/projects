@@ -4,15 +4,10 @@ import { Avatar } from "@material-ui/core";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import SearchIcon from "@material-ui/icons/Search";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
-import MenuIcon from "@material-ui/icons/Menu";
 
 function Header() {
   return (
     <div className="header">
-      <div className="header__logo">
-        <MenuIcon className="header__menuIcon" />
-        <h4>Logo</h4>
-      </div>
       <div className="header__navbar">
         <div className="header__left">
           <div className="header__activity">

@@ -1,7 +1,3 @@
-/* .header {
-  margin-top: -50px;
-} */
-
 .header__logo {
   display: flex;
   align-items: center;
@@ -9,15 +5,11 @@
   color: #6a1b9a;
 }
 
-.header__menuIcon {
-  font-size: 40px !important;
-}
-
 .header__navbar {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  margin-bottom: 40px;
+  justify-content: space-between;
+  margin: 20px;
 }
 
 .header__left {
@@ -85,15 +77,14 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .header__navbar {
-    margin-left: 40px;
-    margin-bottom: 40px;
+  .header__navbar > * {
+    margin: 4px;
   }
 
   .header__left {
-    width: 160px;
-    height: 40px;
-    margin-right: 5px;
+    width: 150px;
+    height: 50px;
+    margin-left: -30px;
   }
 
   .header__searchBar {
@@ -107,48 +98,71 @@
   .header__navbar__right {
     padding: 1px 2px;
   }
+  .header__notificationBar {
+    font-size: 15px !important;
+    margin-right: -5px;
+    margin: 2px;
+  }
+  .header__avatar {
+    width: 15px !important;
+    height: 15px !important;
+  }
 }
 
 @media only screen and (min-width: 600px) {
   .header__navbar {
-    margin-left: 40px;
     margin-bottom: 40px;
   }
   .header__left {
-    margin: 4px;
-    padding: 0px;
+    padding: 20px;
+    height: 55px;
+    width: 150px;
+    margin-left: -25px;
   }
   .header__searchBar {
-    padding: 15px;
-    width: 200px;
+    padding: 10px;
+    width: 100px;
+    margin: 4px;
   }
 
   .header__searchBar > input {
-    width: 100px;
+    min-width: 50px;
   }
 
   .header__navbar__right {
-    padding: 6px 3px;
+    padding: 4px 1px;
     margin: 4px;
+  }
+  .header__notificationBar {
+    font-size: 10px !important;
+    margin-right: -5px;
+    margin: 2px;
+  }
+  .header__avatar {
+    width: 15px !important;
+    height: 15px !important;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .header {
-    margin-top: -50px;
-  }
   .header__navbar {
-    margin-left: 250px;
+    margin: 20px;
+  }
+
+  .header__navbar > * {
+    margin: 10px;
   }
   .header__left {
-    padding: 1px;
+    min-width: 150px;
   }
 
   .header__navbar__right {
-    padding: 5px;
+    padding: 10px;
+    min-width: 50px;
   }
   .header__searchBar {
+    min-width: 200px;
     padding: 13px;
   }
 }
@@ -156,28 +170,213 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .header__navbar {
-    margin-left: 250px;
+    /* margin-left: 250px; */
+    margin: 0px;
   }
   .header__left {
+    margin: 40px;
     padding: 10px;
+    height: 70px;
+    width: 200px;
   }
   .header__searchBar {
-    padding: 23px;
+    padding: 15px;
     margin: 0px 3px;
   }
   .header__navbar__right {
-    padding: 15px 50px;
+    padding: 15px 30px;
     margin-top: 4px;
+  }
+  .header__notificationBar {
+    font-size: 20px !important;
+    margin-right: -5px;
+    margin: 2px;
+  }
+  .header__avatar {
+    width: 25px !important;
+    height: 25px !important;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .header__navbar {
-    margin-left: 2%;
+  .header__logo {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    color: #6a1b9a;
   }
+
+  .header__menuIcon {
+    font-size: 40px !important;
+  }
+
+  .header__navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+  }
+
   .header__left {
-    padding: 10px;
-    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #eeeeee;
+    width: 300px;
+    height: 60px;
+    border-radius: 8px;
+  }
+
+  .header__activity,
+  .header__toolGuide {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__left h3 {
+    color: #6a1b9a;
+    font-weight: 420;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  .header__dropDown {
+    color: #6a1b9a;
+  }
+
+  .header__searchBar {
+    background-color: #eeeeee;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  .header__searchBar > input {
+    border: none;
+    padding: 5px;
+    background-color: #eeeeee;
+  }
+  ::placeholder {
+    color: #6a1b9a;
+    font-size: 17px;
+    font-weight: 520;
+  }
+  .header__searchIcon {
+    color: #6a1b9a;
+  }
+
+  .header__navbar__right {
+    display: flex;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #eeeeee;
+    color: #6a1b9a;
+    border-radius: 7px;
+    margin-top: 4px;
+  }
+
+  .header__notificationBar {
+    font-size: 30px !important;
+    margin-right: 15px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .header__navbar {
+      margin-left: 40px;
+      margin-bottom: 40px;
+    }
+
+    .header__left {
+      width: 160px;
+      height: 40px;
+      margin-right: 5px;
+    }
+
+    .header__searchBar {
+      padding: 8px;
+      width: 80px;
+    }
+    .header__searchBar > input {
+      width: 20px;
+    }
+
+    .header__navbar__right {
+      padding: 1px 2px;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    .header__navbar {
+      margin-left: 40px;
+      margin-bottom: 40px;
+    }
+    .header__left {
+      margin: 4px;
+      padding: 0px;
+    }
+    .header__searchBar {
+      padding: 15px;
+      width: 200px;
+    }
+
+    .header__searchBar > input {
+      width: 100px;
+    }
+
+    .header__navbar__right {
+      padding: 6px 3px;
+      margin: 4px;
+    }
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .header {
+      margin-top: -50px;
+    }
+    .header__navbar {
+      margin-left: 250px;
+    }
+    .header__left {
+      padding: 1px;
+    }
+
+    .header__navbar__right {
+      padding: 5px;
+    }
+    .header__searchBar {
+      padding: 13px;
+    }
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .header__navbar {
+      margin-left: 250px;
+    }
+    .header__left {
+      padding: 10px;
+    }
+    .header__searchBar {
+      padding: 23px;
+      margin: 0px 3px;
+    }
+    .header__navbar__right {
+      padding: 15px 50px;
+      margin-top: 4px;
+    }
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .header__navbar {
+      margin-left: 2%;
+    }
+    .header__left {
+      padding: 10px;
+      margin-left: 5px;
+    }
   }
 }

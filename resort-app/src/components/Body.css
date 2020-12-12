@@ -228,6 +228,7 @@
 @media only screen and (max-width: 600px) {
   .body__syllabus {
     margin-left: 5px;
+    margin-top: 20px;
   }
   .body__subject {
     flex-wrap: wrap;
@@ -255,23 +256,26 @@
   .body__concepts,
   .body__subconcepts {
     margin-top: 20px;
-    height: 100px;
+    height: 150px;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .body__syllabus {
-    margin-left: -80px;
+    margin-top: 50px;
+    margin-left: 200px;
   }
   .body__subject {
     align-items: center;
     flex-wrap: wrap;
-    margin: 40px;
+    margin-left: 240px;
   }
+
   .body__subject > * {
-    margin: 20px;
+    margin: 10px;
   }
+
   .body__footer {
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -279,22 +283,27 @@
   }
 
   .body__footer > * {
-    margin: 40px;
+    margin-left: 180px;
   }
 
-  .body__subject > h2 {
-    width: 600px;
-    height: 70px;
-  }
   .body__chapterName {
-    padding: 10px;
+    padding: 3px;
+  }
+
+  .body__chapterName > * {
+    margin: 2px;
+    padding: 2px;
   }
 
   .body__concepts,
   .body__subconcepts {
-    margin-top: 20px;
-    height: 100px;
+    margin-top: 40px;
+    height: 150px;
     width: 200px;
+  }
+
+  .body__center {
+    margin-top: 50px;
   }
 }
 
@@ -307,16 +316,16 @@
     padding: 15px 20px;
   }
   .body__subject {
-    display: flex;
     flex-wrap: wrap;
-    align-items: center;
     margin-left: 250px;
     margin-top: 30px;
   }
+
+  .body__subject > h2 {
+    width: 450px;
+  }
   .body__footer {
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-left: 180px;
   }
   .body__concepts,
   .body__subconcepts {
@@ -324,6 +333,15 @@
     height: 100px;
     width: 350px;
     margin-left: 20px;
+  }
+
+  .body__chapterName {
+    padding: 10px;
+  }
+
+  .body__chapterName > * {
+    margin: 6px;
+    padding: 6px;
   }
 }
 
@@ -337,11 +355,12 @@
   }
   .body__subject {
     flex-wrap: nowrap;
-    margin-left: 320px;
+    margin-left: 250px;
   }
   .body__subject > h2 {
     padding: 20px 80px;
     margin: 5px;
+    width: 200px;
   }
   .body__footer {
     margin-left: 0px;
@@ -362,26 +381,32 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .body__syllabus {
-    margin-left: -110px;
+    margin-left: 240px;
+    width: 400px;
   }
   .body__subject {
     flex-wrap: nowrap;
-    margin-left: 285px;
+    margin-left: 170px;
+  }
+
+  .body__subject > h2 {
+    width: 400px;
+    height: 80px;
   }
 
   .body__footer {
-    margin-left: 290px;
+    margin-left: 70px;
     flex-wrap: nowrap;
-    width: 1200px;
+    /* width: 1200px; */
   }
   .body__concepts,
   .body__subconcepts {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     height: 100px;
     width: 280px;
   }
   .body__center,
   .body__right {
-    margin-top: -100px;
+    margin-top: -130px;
   }
 }

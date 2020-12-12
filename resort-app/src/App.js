@@ -1,19 +1,14 @@
 import React from "react";
 import "./App.css";
 import Body from "./components/Body";
-import Header from "./components/Header";
-import DrawerItem from "./components/DrawerItem";
+import ResponsiveDrawer from "./components/ResponsiveDrawer";
 
 function App() {
   return (
     <div className="app">
-      <div className="app__drawer">
-        <DrawerItem />
-      </div>
+      <ResponsiveDrawer />
       <div className="app__hero">
-        <div class="app__header">
-          <Header />
-        </div>
+        <div class="app__header"></div>
         <div class="app__body">
           <Body />
         </div>
